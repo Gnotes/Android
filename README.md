@@ -9,8 +9,8 @@ _我是在Mac上学习Android，因此会跟window有些不同，有不正确处
 
 
 # Reference
-[Android training course 中文](https://github.com/kesenhoo/android-training-course-in-chinese)
-[Android课程手册](https://www.gitbook.com/book/mobile100/android/details)
+- [Android training course 中文](https://github.com/kesenhoo/android-training-course-in-chinese)
+- [Android课程手册](https://www.gitbook.com/book/mobile100/android/details)
 
 - [x] [壁虎Android开发](http://www.51zxw.net/list.aspx?cid=445) `在线观看` 
 - [x] [老罗Android开发](http://www.xuexi111.com/jiaocheng/shipin/32886.html) `下载`
