@@ -9,11 +9,11 @@
 ## 目录
 
 - [JDK](#jdk)
-  - [安装](#安装)
+  - [JDK安装](#jdk安装)
   - [配置JAVA_HOME环境变量](#配置java_home环境变量)
   - [卸载](#卸载)
 - [Android Studio](#android-studio)
-  - [安装](#安装)
+  - [Android Studio安装](#android-studio安装)
   - [配置ANDROID_HOME环境变量](#配置android_home环境变量)
 - [立即更新修改项](#立即更新修改项)
 - [配置图](#配置图)
@@ -22,7 +22,7 @@
 
 Mac上自带`JDK`但是版本比较旧，我安装的`JDK1.8` 通过`java -version`可以查看JDK版本.
 
-### 安装
+### JDK安装
 
 下载好JDK后直接安装，默认安装目录：`/Library/Java/JavaVirtualMachines/`
 
@@ -44,7 +44,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 ## Android Studio
 
-### 安装
+### Android Studio安装
 
 下载好Android Studio 后一路`OK安装`就可以了.
 
