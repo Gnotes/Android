@@ -4,7 +4,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 
 ## 目录
 
-- [`搭建开发环境`](搭建开发环境/index.md)
+- [`搭建开发环境`](搭建开发环境/README.md)
 
 # Reference
 - [Android training course 中文](https://github.com/kesenhoo/android-training-course-in-chinese)

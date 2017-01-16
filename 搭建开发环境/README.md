@@ -6,6 +6,15 @@
 
 参考文档：[`Mac上搭建Android开发环境`](http://blog.163.com/zhou_411424/blog/static/19736215620130161284750/) [`使用Android Studio搭建Android集成开发环境（图文教程）`](http://www.cnblogs.com/smyhvae/p/4022844.html)
 
+## 目录
+
+- [JDK](#jdk)
+  - [安装](#安装)
+  - [配置JAVA_HOME环境变量](#配置java_home环境变量)
+  - [卸载](#卸载)
+- [Android Studio](#android-studio)
+- [立即更新修改项](#立即更新修改项)
+- [配置图](#配置图)
 
 ## JDK
 
@@ -57,4 +66,4 @@ source ~/.bash_profile
 
 ## 配置图
 
-<img src="./image/congfig.png" width="400">
+<img src="./image/config.png" width="400">
