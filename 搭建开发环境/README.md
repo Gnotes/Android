@@ -13,6 +13,8 @@
   - [配置JAVA_HOME环境变量](#配置java_home环境变量)
   - [卸载](#卸载)
 - [Android Studio](#android-studio)
+  - [安装](#安装)
+  - [配置ANDROID_HOME环境变量](#配置android_home环境变量)
 - [立即更新修改项](#立即更新修改项)
 - [配置图](#配置图)
 
