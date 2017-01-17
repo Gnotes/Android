@@ -19,6 +19,12 @@
   - [Android Studio卸载](#android-studio卸载)
 - [立即更新修改项](#立即更新修改项)
 - [配置图](#配置图)
+- [模拟器安装](#模拟器安装)
+  - [安装Virtual Box](#安装virtual-box)
+  - [注册用户](#注册用户)
+  - [Genymontion下载并安装](#genymontion下载并安装)
+  - [安装Genymontion插件](#安装genymontion插件)
+  - [新建模拟器](#新建模拟器)
 
 ## JDK
 
@@ -111,3 +117,40 @@ source ~/.bash_profile
 ## 配置图
 
 <img src="./image/config.png" width="400">
+
+## 模拟器安装
+
+[`Android Studio2.0 教程从入门到精通MAC版 - 安装篇`](http://www.open-open.com/lib/view/open1466430392743.html)    
+
+Android Stuido里面的AVD Manager可以创建模拟器，使用起来也比较简单，缺点就是性能不行，现在比较流行使用Genymotion，号称史上最快的Android模拟器。下面我们就来装Genymontion。
+
+### 安装Virtual Box
+
+[`virtualbox.org`](https://www.virtualbox.org/wiki/Downloads) 
+
+### 注册用户
+
+[Genymotion](https://www.genymotion.com/)
+
+### Genymontion下载并安装
+
+[Genymotion](https://www.genymotion.com/download/)
+
+### 安装Genymontion插件
+
+在Android Studio里打开`Preferences`设置，并找到`Plugins`后点击`Browse Repositories`,然后搜索`Genymotion`并安装+重启,你就会看到Genymontion的图标
+
+<img src="./image/ge.jpg" width="400">
+
+第一次打开会提示选择Genymontion路径`/Applications/Genymotion.app`
+
+<img src="./image/ge-config.jpg" width="400">
+
+### 新建模拟器
+
+在Genymontion Device Manager中点击New按钮新建模拟器    
+
+<img src="./image/ge-manager.jpg" width="400">
+
+`提示需要登录的话请登录`   
+登陆成功后可以看到可供选择的列表中有不同型号的模拟器，可以通过`版本`和`设备型号`找到你想创建的模拟器。然后一路`Next`后坐等Genymontion下载完模拟器
