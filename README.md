@@ -5,8 +5,10 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 ## 目录
 
 - [`搭建开发环境`](搭建开发环境/README.md)
+- [`API Level`](API Level/README.md)
 
 # Reference
+- [Android 开发者官网](https://developer.android.com/index.html)
 - [Android training course 中文](https://github.com/kesenhoo/android-training-course-in-chinese)
 - [Android课程手册](https://www.gitbook.com/book/mobile100/android/details)
 - [生命壹号 - Android开发](http://www.cnblogs.com/smyhvae/category/587732.html)
