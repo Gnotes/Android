@@ -2,7 +2,7 @@
 
 _我是在Mac上学习Android，因此会跟windows有些不同，有不正确处请斧正😀_
 
-## 目录
+## Contents
 
 - [`example`](example/)
 - [`搭建开发环境`](搭建开发环境/)
