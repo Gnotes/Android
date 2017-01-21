@@ -63,7 +63,7 @@ _我们选择了`API 18（Android 4.3）` ，这个级别开放了一个`新的A
 
   这个制定了应用的编译版本，如果编译版本`小于`我们使用的`API`版本，那么我们的应用会编译不通过，因为该编译版本还不存在这个API。如果`大于`选择的API版本，我们可正常编译应用，应为高版本的API包含了低版本的API和特性。一般我们会选择较高版本的编译版本。
 
-  理性状态：`minSdkVersion <= targetSdkVersion <= compileSdkVersion`
+  理想状态：`minSdkVersion <= targetSdkVersion <= compileSdkVersion`
 
 ## Reference
 [`农民伯伯 - Android API Levels`](http://www.cnblogs.com/over140/archive/2011/04/29/2032433.html) 
