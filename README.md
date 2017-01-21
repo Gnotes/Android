@@ -10,7 +10,6 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`Gradle`](Gradle/)
 - [`目录结构`](目录结构/)
 - [`Activity`](Activity/)
-  - [`Activity`](Activity/)
   - [`Activity生命周期`](Activity生命周期/)
 - [`Intent`](Intent/)
 - [`Service`](Service/)
