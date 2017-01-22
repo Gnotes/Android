@@ -27,6 +27,64 @@ Paused状态常用于：另一个Activity为对话框，弹出来之后只占据
 - `重新活跃阶段` : `onRestart` -> `onStart` -> `onResume`
 - `销毁阶段` : `onPuase` -> `onStop` -> `onDestory`
 
+## 示例代码
+
+```java
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+
+public class MainActivity extends Activity {
+
+    private static final String TAG = "Android Lifecycle Tag:";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Log.d(TAG, "onCreate");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume");
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart");
+    }
+}
+```
+
 ## 参考文档
 
 [`Actvity生命周期`](http://www.cnblogs.com/smyhvae/p/3856555.html)
