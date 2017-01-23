@@ -1,5 +1,8 @@
 # Content Provider
 
+[`Android - Content Providers`](http://www.tutorialspoint.com/android/android_content_providers.htm)
+[`Android组件系列----ContentProvider内容提供者`](http://www.cnblogs.com/smyhvae/p/4108017.html)
+
 _A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network_
 
 Content Provider内容提供者 : 主要用于在不同的应用程序之间实现数据共享
