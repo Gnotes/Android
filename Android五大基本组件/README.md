@@ -33,3 +33,4 @@ android平台提供了Content Provider使一个应用程序的指定数据集提
 
 [`Android四大（五大）基本组件简介`](http://blog.163.com/feng_yun_ju/blog/static/178190393201332822155751/)
 [`Android四大基本组件介绍与生命周期`](http://www.cnblogs.com/bravestarrhu/archive/2012/05/02/2479461.html)
+[`Android之四大组件、六大布局、五大存储`](http://blog.csdn.net/shenggaofei/article/details/52450668)

@@ -16,6 +16,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
   - [`Service`](Service/)
   - [`Broadcast Receiver`](Broadcast Receiver/)
   - [`Content Provider`](Content Provider/)
+- [`UI布局`](UI布局/)
 
 
 # Reference
@@ -23,6 +24,8 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [Android training course 中文](https://github.com/kesenhoo/android-training-course-in-chinese)
 - [Android课程手册](https://www.gitbook.com/book/mobile100/android/details)
 - [生命壹号 - Android开发](http://www.cnblogs.com/smyhvae/category/587732.html)
+- [Android Tutorial](https://www.tutorialspoint.com/android/index.htm)
+- [Android之四大组件、六大布局、五大存储](http://blog.csdn.net/shenggaofei/article/details/52450668)
 
 # Video
 - [x] [壁虎Android开发](http://www.51zxw.net/list.aspx?cid=445) `在线观看`
