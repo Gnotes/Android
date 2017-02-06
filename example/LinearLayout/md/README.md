@@ -1,0 +1,76 @@
+# LinearLayout
+
+布局结构：   
+<img src="./image/linearlayout.png" width="300">
+
+演示效果：   
+<img src="./image/01.gif" width="300">
+
+## activity_main.xml
+
+1大的`LinearLayout` 包含 2个子 `LinearLayout` + 1个子 `Button`，子`LinearLayout`包含文本框
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="UserName："/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter your username"
+            android:maxLength="22"
+            android:id="@+id/username" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Password："/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter your password"
+            android:maxLength="30"
+            android:id="@+id/password" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="确认"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickConfirm"
+        android:id="@+id/button"/>
+
+</LinearLayout>
+```
+
+## 常用属性
+
+- android:orientation ： 布局方向
+- android:inputType ： 键盘弹出，输入框类型
+- android:hint ： placeholder文字
+- android:maxLength ： 最大长度
