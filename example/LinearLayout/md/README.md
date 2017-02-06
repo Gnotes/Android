@@ -1,7 +1,7 @@
 # LinearLayout
 
 布局结构：   
-<img src="./image/linearlayout.png" width="300">
+<img src="./image/linearLayout.png" width="300">
 
 演示效果：   
 <img src="./image/01.gif" width="300">
