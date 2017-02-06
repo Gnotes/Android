@@ -2,6 +2,7 @@
 
 [`UI Layouts`](https://www.tutorialspoint.com/android/android_user_interface_layouts.htm)
 [`Android组件-四大布局的属性详解`](http://www.cnblogs.com/smyhvae/p/4372222.html)
+[`Android-布局管理 (五大布局控件使用）`](http://blog.csdn.net/cctcc/article/details/9943587)
 
 ## 布局实现方式
 
@@ -74,8 +75,8 @@ Gravity attribute plays important role in positioning the view object and it can
 
 [`Android 尺寸单位转换和屏幕适配相关`](http://www.cnblogs.com/mengdd/archive/2013/11/16/3426305.html)
 
-- `dp`  (Density-independent Pixels) 单位密度像素
--  `sp` ( Scale-independent Pixels) 缩放尺寸
+- `dp` `dip`  (Density-independent Pixels) 单位密度像素
+- `sp` ( Scale-independent Pixels) 缩放尺寸
 - `pt` ( Points which is 1/72 of an inch)
 - `px`( Pixels) 像素
 - `mm` ( Millimeters) 毫米
@@ -91,3 +92,7 @@ android:id="@+id/my_button"
 
 - @ : 标明这个属性，xml解析时会自动转化为对应资源   
 - + : 标明这个属性是`新增`的并需要`添加到资源文件`中
+
+## Coordinator Layout
+
+(`Coordinator Layout`)[https://www.aswifter.com/2015/11/12/mastering-coordinator/]
