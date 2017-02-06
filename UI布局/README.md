@@ -95,4 +95,4 @@ android:id="@+id/my_button"
 
 ## Coordinator Layout
 
-(`Coordinator Layout`)[https://www.aswifter.com/2015/11/12/mastering-coordinator/]
+[`Coordinator Layout`](https://www.aswifter.com/2015/11/12/mastering-coordinator/)
