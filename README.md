@@ -28,6 +28,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [生命壹号 - Android开发](http://www.cnblogs.com/smyhvae/category/587732.html)
 - [Android Tutorial](https://www.tutorialspoint.com/android/index.htm)
 - [Android之四大组件、六大布局、五大存储](http://blog.csdn.net/shenggaofei/article/details/52450668)
+- [Andriod-collect-blogs](https://github.com/ZQiang94/Andriod-collect-blogs)
 
 # Video
 - [x] [壁虎Android开发](http://www.51zxw.net/list.aspx?cid=445) `在线观看`
