@@ -6,7 +6,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 
 - [`example`](example/)
 - [`搭建开发环境`](搭建开发环境/)
-- [`API Level`](API Level/)
+- [`API-Level`](API-Level)
 - [`Gradle`](Gradle/)
 - [`目录结构`](目录结构/)
 - [`Android五大基本组件`](Android五大基本组件/)
@@ -14,8 +14,8 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
     - [`Activity生命周期`](Activity生命周期/)
   - [`Intent`](Intent/)
   - [`Service`](Service/)
-  - [`Broadcast Receiver`](Broadcast Receiver/)
-  - [`Content Provider`](Content Provider/)
+  - [`Broadcast-Receiver`](Broadcast-Receiver/)
+- [`Content-Provider`](Content-Provider/)
 - [`UI布局`](UI布局/)
 
 
@@ -36,3 +36,4 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [x] [老罗Android开发 视频教程 第二季](http://luo.apkbus.com/) `注册下载`
 - [x] [Android开发从零开始视频教程](http://www.xuexi111.com/jiaocheng/shipin/26275.html) `下载`
 - [ ] [Android Development For Absolute Beginners](https://www.youtube.com/playlist?list=PLB03EA9545DD188C3) `English` `online watching`
+- [x] [极客学院Android项目实战视频教程](http://www.php.cn/course/330.html) `在线观看`
