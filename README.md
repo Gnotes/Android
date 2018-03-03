@@ -6,6 +6,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 
 - [`example`](example/)
 - [`搭建开发环境`](搭建开发环境/)
+- [`ADT`](ADT)
 - [`API-Level`](API-Level)
 - [`Gradle`](Gradle/)
 - [`目录结构`](目录结构/)
