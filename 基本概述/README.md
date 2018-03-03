@@ -7,3 +7,12 @@
 - ADT Bundle 
 > 包含了安卓开发所遇的`SDK`和`Eclipse`的集成开发工具;  
 > 集成了开发环境及基本配置
+
+- SDK
+> SDK(Standard Development Kits): 标准开发工具包
+
+- APK
+> `apk` 是安卓应用的后缀，是Android Package的缩写，即安卓安装包
+
+- DEX
+> DEX 是Dalvik VM Executes(安卓虚拟机执行程序)的全称，即Android Dalvik可执行程序
