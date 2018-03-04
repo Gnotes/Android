@@ -18,7 +18,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
   - [`Intent`](Intent/)
   - [`Service`](Service/)
   - [`Broadcast-Receiver`](Broadcast-Receiver/)
-- [`Content-Provider`](Content-Provider/)
+  - [`Content-Provider`](Content-Provider/)
 - [`UI布局`](UI布局/)
 
 
