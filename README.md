@@ -12,7 +12,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`目录结构`](目录结构/)
 - [`Android五大基本组件`](Android五大基本组件/)
   - [`Activity`](Activity/)
-    - [`Activity生命周期`](Activity生命周期/)
+    - [`Activity生命周期`](Activity#Activity生命周期/)
   - [`Intent`](Intent/)
   - [`Service`](Service/)
   - [`Broadcast-Receiver`](Broadcast-Receiver/)
