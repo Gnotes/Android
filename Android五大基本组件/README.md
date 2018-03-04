@@ -1,10 +1,12 @@
 # Android五大基本组件
 
-- `Activity` : 用户界面
-- `Intent` : 意图
+Android 一般分为4大组件
+
+- `Activity` : 用户界面(活动)
 - `Service` : 服务
 - `Broadcast Receiver` : 广播接收器
 - `Content Provider` : 内容提供者
+- `Intent` : 意图(个人定位为第5个)
 
 ## [Activity](../Activity/)
 
@@ -21,7 +23,7 @@ Intent是一种运行时绑定（runtime binding）机制，它能够在程序�
 
 ## [Broadcast Receiver](../Broadcast-Receiver/)
 
-你的应用可以使用它对外部事件进行过滤只对感兴趣的外部事件(如当电话呼入时，或者数据网络可用时)进行接收并做出响应。广播接收器没有用户界面。然而，它们可以启动一个activity或serice 来响应它们收到的信息，或者用NotificationManager 来通知用户。通知可以用很多种方式来吸引用户的注意力──闪动背灯、震动、播放声音等。一般来说是在状态栏上放一个持久的图标，用户可以打开它并获取消息
+你的应用可以使用它对外部事件进行过滤只对感兴趣的外部事件(如当电话呼入时，或者数据网络可用时)进行接收并做出响应。广播接收器没有用户界面。然而，它们可以启动一个activity或service 来响应它们收到的信息，或者用NotificationManager 来通知用户。通知可以用很多种方式来吸引用户的注意力──闪动背灯、震动、播放声音等。一般来说是在状态栏上放一个持久的图标，用户可以打开它并获取消息
 
 ## [Content Provider](../Content-Provider/)
 
