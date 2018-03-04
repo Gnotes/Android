@@ -149,11 +149,11 @@ dependencies {
   - versionName : 项目版本名称
   - buildTypes : 指定项目编译`生成安装文件`的配置，通常其中只有两个闭包，一个 `debug`，一个`release`，其中 `debug`是可以忽略不写的
     - minifyEnabled : 指定是否对项目进行代码混淆
-    - proguardFiles : 混淆时引用的规则文件，这里引入了2个文件, `proguard-android.txt`是在 `Android SDK`目录下的通用规则，`proguard-rules.pro`是项目根目录下的本地混淆规则
+    - proguardFiles : 混淆时引用的规则文件，这里引入了2个文件, `proguard-android.txt`是在 `Android SDK`目录下的通用规则，`proguard-rules.pro`是项目根目录下的本地混淆规则
 - dependencies : 指定项目所有的依赖关系，Android Studio项目一共有三种依赖关系
   - 本地依赖 : 对本地的jar包或目录依赖，如 `implementation fileTree(dir: 'libs', include: ['*.jar'])`
   - 库依赖 : 对项目添加的库模块添加依赖，如 `compile project(':helper')`
-  - 远程依赖 : 对 `jcenter`仓库的依赖，如 `implementation 'com.android.support:appcompat-v7:26.1.0'`， `com.android.support` 是依赖`域名部分`，用于和其他公司的库区分；`appcompat-v7` 是`组名称`，用于同公司的不同库区分；`26.1.0`是依赖库的版本
+  - 远程依赖 : 对 `jcenter`仓库的依赖，如 `implementation 'com.android.support:appcompat-v7:26.1.0'`， `com.android.support` 是依赖`域名部分`，用于和其他公司的库区分；`appcompat-v7` 是`组名称`，用于同公司的不同库区分；`26.1.0`是依赖库的版本
 
 
 
