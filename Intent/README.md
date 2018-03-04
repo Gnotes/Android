@@ -293,6 +293,10 @@ button.setOnClickListener(new OnClickListener(){
 
 一个程序启动后系统会为这个程序分配一个task供其使用，另外同一个task里面可以拥有不同应用程序的activity。那么与activity的启动模式有关
 
+## intent-filter
+
+Intent 的过滤规则
+
 ### Intent的常见应用
 
 - 打开指定网页
@@ -346,3 +350,8 @@ Uri uri = Uri.parse("file:///storage/sdcard1/someone.mp3"); // 路径也可以�
 intent.setDataAndType(uri, "audio/mp3"); // 方法：Intent android.content.Intent.setDataAndType(Uri data, String type)
 startActivity(intent);
 ```
+
+## 参考文档
+
+- [Intent及其七大属性及intent-filter设置](http://blog.csdn.net/elevendgq/article/details/51436608) 
+- [你必须弄懂的Intent Filter匹配规则](http://blog.csdn.net/mynameishuangshuai/article/details/51673273)

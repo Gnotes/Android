@@ -42,11 +42,12 @@
 | android:paddingTop | 上边填充高度 |
 | android:paddingBottom | 下边填充高度|
 
-### android:layout_width
-常用属性
-`android:layout_width=wrap_content` 根据内容大小自适应宽度
+### wrap_content & fill_parent
 
-`android:layout_width=fill_parent` 填充满父容器大小
+常用属性
+
+- `android:layout_width=wrap_content` 根据内容大小自适应宽度或高度
+- `android:layout_width=fill_parent` 填充满父容器宽度或高度
 
 ### Gravity attribute 
 

@@ -1,0 +1,25 @@
+# Menu 菜单
+
+**参考exmaple 中的 [FirstActivity](../example/FirstActivity)**
+
+在移动应用中会需要运用到大量的菜单，而菜单的创建也需要在 `res/menu` 目录下通过 `New -> Menu resouce file`创建菜单文件:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add"
+        android:title="@string/menu_add"/>
+    <item
+        android:id="@+id/menu_edit"
+        android:title="@string/menu_edit"/>
+</menu>
+```
+
+由此可见，菜单是通过 `<menu>`标签包裹的xml配置，`<item>`就是具体创建一个菜单项，然后通过 `android:id` 给菜单添加唯一标示，`android:title` 指定菜单名称
+
+## Errors
+
+如果模拟器没有显示导航头部，请查看`Activity`是否是继承自 `AppCompatActivity` ，并查看`AndroidManifest.xml` 中的 `android:theme` 是否误设置成了`Theme.AppCompat.NoActionBar`
+
+<img src="./menu.png" width="300">

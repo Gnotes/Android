@@ -22,12 +22,43 @@ Activity有四种启动模式：`standard` `singleTop` `singleTask` `singleInsta
 通过在`AndroidManifest.xml`中的`activity`标签，配置属性`android:launchMode`设置加载模式,如：
 
 ```xml
-<activity android:name=".app.ExampleActivity"  
-          android:label="@string/example_label"  
-          android:theme="@style/Theme.Dialog"  
-          android:launchMode="singleTask"  
+<activity 
+    android:name=".app.ExampleActivity"  
+    android:label="@string/example_label"  
+    android:theme="@style/Theme.Dialog"  
+    android:launchMode="singleTask"  
 </activity> 
 ```
+
+- `android:name`: 指定活动的加载类，即页面展示时对应显示的Activity
+- `android:label`: 指定活动的显示的名称
+
+```xml
+<application
+    android:name="com.example.xing.MyApplication"
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:theme="@style/AppTheme" 
+    android:label="@string/appication_app_name" >
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
+```
+
+上方的代码在 `appliation` 和 `activity` 中都设置`android:label`属性:
+> 运行发现：结果为`@string/app_name`，即`activity`设置的`label`的名字。   
+> 有以下几种情况：   
+>（1）activity的优先级高于application，也就是说两者都设置这个标签的话，activity的值覆盖application   
+>（2）application里设置了此标签，其他activity没有设置的情况下，应用程序名在桌面上的名字和所有activity的title是这个设置的标签   
+>（3）application里设置了此标签，主activity中也设置了此标签，则应用程序名和主activity的title都是主activity中设置的标签，其他非主activity的title如果没有自己设置此标签，还是使用application中设置的标签，如果其他非主activity也设置了此标签，则其title就是自己设置的这个标签  
+
+**activity和application里都可以设置android:label标签，activity的优先级高于application**
 
 **`具体示例参见参考文档`**
 
@@ -73,9 +104,11 @@ startActivity(intent);
   android:layout_marginTop="22dp"
   android:onClick="toSecondActivity" 
   android:text="SecondActivity" />
-
-  // 通过android:onClick属性设置点击按钮执行方法
+  <!-- 通过android:onClick属性设置点击按钮执行方法 -->
 ```
+- `android:text`: 指定组件显示的文本内容
+
+更多布局参数查看 [UI布局](../UI布局#布局属性)
 
 ```java
 public void toSecondActivity(View view){
