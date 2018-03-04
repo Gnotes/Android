@@ -12,6 +12,7 @@
   - [JDK安装](#jdk安装)
   - [配置JAVA_HOME环境变量](#配置java_home环境变量)
   - [卸载](#卸载)
+- [Android SDK](#android-sdk)
 - [Android Studio](#android-studio)
   - [Reference](#reference)
   - [Android Studio安装](#android-studio安装)
@@ -56,6 +57,10 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 [`Android Studio教程从入门到精通`](http://www.open-open.com/lib/view/open1433387390635.html) Android Studio 使用安装教程    
 [`android-studio.org`](http://www.android-studio.org/) Android Studio 相关文档及部分视频教程
+
+### Android SDK
+
+Android SDK 是Google提供的Android开发工具包，在Android开发时，需要引入该工具包，来使用Android相关的API
 
 ### Android Studio安装
 

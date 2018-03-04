@@ -27,18 +27,19 @@ Android项目结构主要分为以下三个模块：
 - `build` : 代码编译后生成的文件存放的位置
 - `gradle` : wrapper的jar和配置文件所在的位置
 - `.gitignore` : 使用git管理项目的忽略文件
-- `build.gradle ` : gradle编译的相关配置文件（相当于Makefile）
-- `gradle.properties` : gradle相关的全局属性设置
+- `build.gradle ` : 全局的gradle构建脚本，其编译的相关配置文件（相当于Makefile）
+- `gradle.properties` : gradle相关的全局属性设置，__这里的配置将影响到项目所有gradle编译脚本__
 - `gradlew` : *nix下的gradle wrapper可执行文件
 - `graldew.bat` : windows下的gradle wrapper可执行文件
-- `local.properties` : 本地属性设置（key设置，android sdk位置等属性）
-- `settings.gradle` : 和设置相关的gradle脚本
+- `*.iml` : IntelliJ IDEA自动生成的文件(Android Studio)是基于IntelliJ 开发的
+- `local.properties` : 本地属性设置（key设置），一般设置android sdk位置等属性
+- `settings.gradle` : 指定项目所有引入的模块和设置相关的gradle脚本，一般情况是自动完成的，不需要手动修改
 
 ---
 
 - `app` : Android项目主目录
   - `build` : 编译后的文件存在的位置（包括最终生成的apk也在这里面）
-  - `libs` : 依赖的第三方库所在的位置（jar和aar)
+  - `libs` : 依赖的第三方库所在的位置（jar和aar)，这个目录下的jar包会自动添加到构建路径下
   - `src` : 源代码所在的目录
     - `main` : 主要代码所在位置（src/androidTest)就是测试代码所在位置了
       - `assets` : 存放多媒体数据文件：如视频、音频，需要时创建 **不被编译**
@@ -55,6 +56,7 @@ Android项目结构主要分为以下三个模块：
 
 - `res` : android资源文件所在位置
   - `drawable` : 存放图片资源
+  - `mipmap` : 存放应用图标资源
   - `layout` : 布局文件
   - `menu` : 菜单文件
   - `values` : 存放`字符串` `数组` `颜色` 等常量数据
