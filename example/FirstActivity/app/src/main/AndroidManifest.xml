@@ -11,11 +11,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="This is my first activity"
-            >
+            android:label="This is my first activity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="SecondActivity">
+            <intent-filter>
+                <action android:name="com.example.xing.firstactivity.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.xing.firstactivity.SECOND_CATEGORY"/>
             </intent-filter>
         </activity>
     </application>

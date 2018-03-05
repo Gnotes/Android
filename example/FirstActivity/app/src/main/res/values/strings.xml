@@ -2,4 +2,5 @@
     <string name="app_name">FirstActivity</string>
     <string name="menu_add">添加</string>
     <string name="menu_edit">编辑</string>
+    <string name="menu_remove">Go Back</string>
 </resources>
