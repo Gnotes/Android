@@ -2,6 +2,36 @@
 
 Activity组件是四大组件之一，在应用中一个Activity可以用来表示一个界面， 中文意思也可以理解为“活动” ，即一个活动开始，代表Activity组件启动；活动结束，代表一个Activity的生命周期结束
 
+## 活动声明
+
+活动的声明需要放在AndroidManifest.xml的 `<application>`标签中，通过`<activity>`标签声明，如: 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xing.firstactivity">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 声明一个活动 -->
+        <!-- android:name 指定注册的活动页面,即 com.example.xing.firstactivity.MainActivity,由于manifest 的package属性已经指定了包名，因此可以省略 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="This is my first activity">
+            <intent-filter>
+                <!-- 指定当前活动为主活动页面 -->
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+```
+
 ## Activity生命周期
 
 详见:[`Activity生命周期`](../Activity生命周期)
@@ -10,14 +40,14 @@ Activity组件是四大组件之一，在应用中一个Activity可以用来表�
 
 Activity有四种启动模式：`standard` `singleTop` `singleTask` `singleInstance` 
 
-- `standard`    
-  模式启动模式，每次激活Activity时都会创建新的Activity，并放入任务栈中
-- `singleTop`   
+- `standard`
+  `模式启动模式`，每次激活Activity时都会创建新的Activity，并放入任务栈中
+- `singleTop`
   如果在任务的栈顶正好存在该Activity的实例，就重用该实例，否则就会创建新的实例并放入栈顶(即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例)
-- `singleTask`    
+- `singleTask`
   如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移除栈。如果栈中不存在该实例，将会创建新的实例放入栈中
-- `singleInstance`    
-  在一个新栈中创建该Activity实例，并让多个应用共享改栈中的该Activity实例。一旦改模式的Activity的实例存在于某个栈中，任何应用再激活改Activity时都会重用该栈中的实例，其效果相当于多个应用程序共享一个应用，不管谁激活该Activity都会进入同一个应用中
+- `singleInstance`
+  在一个`新栈`中创建该Activity实例，并让多个应用共享改栈中的该Activity实例。一旦改模式的Activity的实例存在于某个栈中，任何应用再激活改Activity时都会重用该栈中的实例，其效果相当于多个应用程序共享一个应用，不管谁激活该Activity都会进入同一个应用中
 
 通过在`AndroidManifest.xml`中的`activity`标签，配置属性`android:launchMode`设置加载模式,如：
 

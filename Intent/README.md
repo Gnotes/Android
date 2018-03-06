@@ -2,7 +2,7 @@
 
 请仔细阅读参考文档：[`Android组件系列----Intent详解`](http://www.cnblogs.com/smyhvae/p/3959204.html)
 
-Intent组件可能不是四大组件，但却是连接四大组件的桥梁
+Intent组件可能不是四大组件，但却是连接四大组件的桥梁，不仅可以指定当前活动想要执行的操作（启动新活动...），还可以在不同组件间传递参数
 
 Android中提供了Intent机制来协助应用间的交互与通讯，或者采用更准确的说法是，Intent不仅可用于应用程序之间，也可用于应用程序内部的`activity`, `service`和`broadcast receiver`之间的交互
 
@@ -12,18 +12,16 @@ activity、service和broadcast receiver之间是通过Intent进行通信的，�
 
 <img src="./image/intent.png" width="400">
 
-## Intent对于不同组件有不同的使用方式
 
- - Activity   
+## Intent类型
 
-  使用`Context.startActivity()` 或 `Activity.startActivityForResult()`，传入一个`intent`来启动一个activity，使用 `Activity.setResult()`，传入一个intent来从activity中返回结果
- - Service    
+- 显式Intent（直接类型）
+- 隐式Intent（间接类型）
 
- 将intent对象传给`Context.startService()`来启动一个service或者传消息给一个运行的service。将intent对象传给 `Context.bindService()`来绑定一个service。
+官方建议使用隐式Intent。(component属性为直接类型，其他均为间接类型)  
+显示类型通过`直接指定组件`来表明意图   
+隐式类型通过`匹配`抽象的`action`和`category`等信息,通过系统自己分析Intent来最终确定操作意图（Activity） 
 
-- Broadcast Receiver    
-
-  将intent对象传给 `Context.sendBroadcast()`，`Context.sendOrderedBroadcast()`，或者`Context.sendStickyBroadcast()`等广播方法，则它们被传给 broadcast receiver
 
 ## Intent组成部分
 
@@ -34,15 +32,6 @@ activity、service和broadcast receiver之间是通过Intent进行通信的，�
 - `type`（数据类型）：对于data范例的描写
 - `extras`（扩展信息）：额外数据
 - `flags`（标志位）：期望这个意图的运行模式
-
-## Intent类型
-
-- 显式Intent（直接类型）
-- 隐式Intent（间接类型）
-
-官方建议使用隐式Intent。上述组成中，component属性为直接类型，其他均为间接类型    
-显示类型通过`直接指定组件`来表明意图   
-隐式类型通过`匹配`抽象的`action`和`category`等信息,通过系统自己分析Intent来最终确定操作意图（Activity）    
 
 ## Activity Intent Filter 匹配过程
 
@@ -142,13 +131,13 @@ button1.setOnClickListener(new OnClickListener() {
     @Override
     public void onClick(View v) {
         //启动另一个Activity，（通过action属性进行查找）
-        Intent intent = new Intent("com.example.intent.MY_ACTION");//方法： android.content.Intent.Intent(String action)                
-        startActivity(intent);        
+        Intent intent = new Intent("com.example.intent.MY_ACTION");//方法： android.content.Intent.Intent(String action)  
+        startActivity(intent);
     }
 });
 ```
 
-在这个Intent中，我并没有指定具体哪一个Activity，我只是指定了一个action的常量。所以说，隐式Intent的作用就表现的淋漓尽致了。此时，点击MainActicity中的按钮，就会跳到SecondActicity中去
+在这个Intent中，我并没有指定具体哪一个Activity，我只是指定了一个action的`常量`。所以说，隐式Intent的作用就表现的淋漓尽致了。此时，点击MainActicity中的按钮，就会跳到SecondActicity中去
 
 上述情况只有SecondActicity匹配成功。如果有多个组件匹配成功，就会以对话框列表的方式让用户进行选择。    
 新建文件`ThirdActicity.java`和activity_third.xml，然后在清单文件`AndroidManifest.xml`中添加`ThirdActivity`的`action`和`category`的过滤器,如下：
@@ -164,12 +153,12 @@ button1.setOnClickListener(new OnClickListener() {
 ```
 
 如果有多个组件被匹配成功，就会以对话框列表的方式让用户进行选择。    
-每个Intent中只能指定一个action，但却能指定多个category；类别越多，动作越具体，意图越明确    
+**每个Intent中只能指定一个action，但却能指定多个category**；类别越多，动作越具体，意图越明确    
 
 目前我们的Intent中只有一个默认的category，现在可以通过intent.addCategory()方法来实现。修改MainActivity中按钮的点击事件，代码如下
 
 ```java
-button1.setOnClickListener(new OnClickListener() {            
+button1.setOnClickListener(new OnClickListener() {
     @Override
     public void onClick(View v) {
         //启动另一个Activity，（通过action属性进行查找）
@@ -177,7 +166,7 @@ button1.setOnClickListener(new OnClickListener() {
         //设置动作（实际action属性就是一个字符串标记而已）
         intent.setAction("com.example.intent.MY_ACTION"); //方法：Intent android.content.Intent.setAction(String action)
         intent.addCategory("com.example.intent.MY_CATEGORY");
-        startActivity(intent);        
+        startActivity(intent);
     }
 });
 ```
@@ -262,7 +251,13 @@ button1.setOnClickListener(new OnClickListener() {
 
 Data属性的声明中要指定访问数据的Uri和MIME类型。可以在<data>元素中通过一些属性来设置：
 
-`android:scheme` `android:path` `android:port` `android:mimeType` `android:host`等，通过这些属性来对应一个典型的Uri格式scheme://host:port/path。例如：`http://www.google.com`
+- `android:scheme` : 指定数据的协议部分，如 http，geo (地理位置)，tel（电话）
+- `android:host` : 指定主机名，如 www.google.com
+- `android:port` : 指定端口，如 8080
+- `android:mimeType` : 指定指定可以处理的数据类型，如 json
+- `android:path` : 指定url路径（主机名和端口后边的部分）
+
+通过这些属性来对应一个典型的Uri格式`scheme://host:port/path`。例如：`http://www.google.com`
 
 ### type（数据类型）
 
@@ -280,8 +275,8 @@ button.setOnClickListener(new OnClickListener(){
         intent.setAction(Intent.ACTION_VIEW);
         Uri data = Uri.parse("file:///storage/sdcard1/someone.mp3"); // file://"表示查找文件，后面再加上我的小米手机存储卡的路径：/storage/sdcard1，再加上具体歌曲的路径
         intent.setDataAndType(data, "audio/mp3"); //设置data+type属性 ,方法：Intent android.content.Intent.setDataAndType(Uri data, String type)
-        startActivity(intent);                
-    }            
+        startActivity(intent);
+    }
 });
 ```
 
@@ -296,6 +291,19 @@ button.setOnClickListener(new OnClickListener(){
 ## intent-filter
 
 Intent 的过滤规则
+
+## Intent对于不同组件有不同的使用方式
+
+ - Activity
+
+  使用`Context.startActivity()` 或 `Activity.startActivityForResult()`，传入一个`intent`来启动一个activity，使用 `Activity.setResult()`，传入一个intent来从activity中返回结果
+ - Service
+
+ 将intent对象传给`Context.startService()`来启动一个service或者传消息给一个运行的service。将intent对象传给 `Context.bindService()`来绑定一个service。
+
+- Broadcast Receiver
+
+  将intent对象传给 `Context.sendBroadcast()`，`Context.sendOrderedBroadcast()`，或者`Context.sendStickyBroadcast()`等广播方法，则它们被传给 broadcast receiver
 
 ### Intent的常见应用
 

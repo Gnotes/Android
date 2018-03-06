@@ -6,15 +6,31 @@ Android是以`Activity (界面)`方式向用户展示应用，那么这个`Activ
 
 <img src="./image/lifecycle.png" width="400">
 
+## 活动状态
+
+> 每个活动在其生命周期总`最多`可能有4中状态.
+
+- 运行状态
+> 活动处于栈顶端，这时活动处于运行状态
+
+- 暂停状态
+> 活动不处于栈顶端，但`任然可见`,如`对话框`
+
+- 停止状态
+> 不处于栈顶端，也完全不可预见，系统任会保持该活动的`状态`和`变量`，但这个时候是`不可靠的`
+
+- 销毁状态
+> 从栈中移除
+
 ## 7个方法
 
 - `void onCreate(Bundle savedInstanceState)` : 在Activity对象被第一次创建时调用
 - `void onStart()` : 当Activity变得可见时调用
-- `void onRestart()` : 当一个Activity再次启动之前调用
 - `void onResume()` : 当Activity开始准备和用户交互时调用,Activity对象处于运行状态。
 - `void onPuase()` : 当系统即将启动另外一个Activity之前调用,另一个Activity位于上层，但是本Activity还可见
 - `void onStop()` : 当前Activity变得不可见时调用
 - `void onDestory()` : 当前Activity被销毁之前调用
+- `void onRestart()` : 当一个Activity再次启动之前调用，除了这个方法外其他的都是两两相对的
 
 ```
 Paused状态常用于：另一个Activity为对话框，弹出来之后只占据了屏幕的一小部分；但后面的Activity还是可见的，但是处于paused状态。
@@ -84,6 +100,10 @@ public class MainActivity extends Activity {
     }
 }
 ```
+
+## 活动被回收了
+
+<img src="./image/gc.jpg" width="500">
 
 ## 参考文档
 
