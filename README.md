@@ -22,6 +22,11 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`UI布局`](UI布局/)
 - [`Menu`](Menu/)
 - [`TextView`](TextView/)
+- [`Button`](Button/)
+- [`EditText`](EditText/)
+- [`ImageView`](ImageView/)
+- [`ProgressBar`](ProgressBar/)
+- [`AlertDialog`](AlertDialog/)
 
 # Reference
 - [Android 开发者官网](https://developer.android.com/index.html)
