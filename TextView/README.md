@@ -14,7 +14,7 @@
 ## 常用属性
 
 | 名称 | 描述 | 可选值 | 备注 |
-|------|------|------|------|------|
+|------|------|------|------|
 | id | 唯一标示 | - | - |
 | layout_width | 宽度 | `match_parent` `fill_parent` `wrap_content` | match_parent 和 fill_parent 意思一样，官方推荐 `match_parent` |
 | layout_height | 高度 | `match_parent` `wrap_content` | - |
