@@ -27,6 +27,9 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`ImageView`](ImageView/)
 - [`ProgressBar`](ProgressBar/)
 - [`AlertDialog`](AlertDialog/)
+- [`ProgressDialog`](ProgressDialog/)
+- [`LinearLayout`](LinearLayout/)
+- [`RelativeLayout`](RelativeLayout/)
 
 # Reference
 - [Android 开发者官网](https://developer.android.com/index.html)
