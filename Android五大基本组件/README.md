@@ -3,10 +3,10 @@
 Android 一般分为4大组件
 
 - `Activity` : 用户界面(活动)
-- `Service` : 服务
-- `Broadcast Receiver` : 广播接收器
-- `Content Provider` : 内容提供者
-- `Intent` : 意图(个人定位为第5个)
+- `Service` : 服务(后台服务)
+- `Broadcast Receiver` : 广播接收器(发送消息广播)
+- `Content Provider` : 内容提供者(数据共享)
+- `Intent` : 意图(个人定位为第5个，操作意图，参数传递)
 
 ## [Activity](../Activity/)
 

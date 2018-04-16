@@ -41,12 +41,15 @@ Android项目结构主要分为以下三个模块：
   - `build` : 编译后的文件存在的位置（包括最终生成的apk也在这里面）
   - `libs` : 依赖的第三方库所在的位置（jar和aar)，这个目录下的jar包会自动添加到构建路径下
   - `src` : 源代码所在的目录
+    - `androidTest` : 测试代码
     - `main` : 主要代码所在位置（src/androidTest)就是测试代码所在位置了
       - `assets` : 存放多媒体数据文件：如视频、音频，需要时创建 **不被编译**
       - `java` : 项目源文件
       - `jniLibs` : jni的一些动态库所在的默认位置(.so文件)
-      - `res` : android资源文件所在位置 **会被编译，并会在编译后的`R.java`文件中生成唯一的ID**
-      - `AndroidManifest.xml` : Android配置文件
+      - `res` : android资源文件（图片、字符串、布局等）所在位置 **会被编译，并会在编译后的`R.java`文件中生成唯一的ID**
+      - `AndroidManifest.xml` : Android配置文件，所有的四大组件应该在这里注册
+    - `test` : 也是测试时使用的
+  - `app.iml` : IntelliJ 生成
   - `build.gradle` : 和这个项目有关的gradle配置，相当于这个项目的Makefile，一些项目的依赖就写在这里面
   - `proguard.pro` : 代码混淆配置文件
 
@@ -59,7 +62,7 @@ Android项目结构主要分为以下三个模块：
   - `mipmap` : 存放应用图标资源
   - `layout` : 布局文件
   - `menu` : 菜单文件
-  - `values` : 存放`字符串` `数组` `颜色` 等常量数据
+  - `values` : 存放`字符串` `样式` `颜色` 等常量数据
 
 ---
 
