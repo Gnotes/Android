@@ -22,6 +22,10 @@ activity、service和broadcast receiver之间是通过Intent进行通信的，�
 显示类型通过`直接指定组件`来表明意图   
 隐式类型通过`匹配`抽象的`action`和`category`等信息,通过系统自己分析Intent来最终确定操作意图（Activity） 
 
+```java
+// 这样明确指定了目标意图的Intent,即是显示Intent
+Intent lancherSecIntent = new Intent(FirstActivity.this,SecondActivity.class);
+```
 
 ## Intent组成部分
 
@@ -72,6 +76,8 @@ startActivity(intent);
 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
 startActivity(intent);
 ```
+
+> 每一个Intent中只能指定`一个`action,但是可以指定`多个`category.
 
 ### Action（动作）
 

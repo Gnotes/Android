@@ -5,4 +5,4 @@
 ## CONTENTS
 
 - [HelloWorld](./HelloWorld)
-- [FistActivity](./FistActivity)
+- [FirstActivity](./FirstActivity)
