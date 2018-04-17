@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirstActivity</string>
+    <string name="goback">返回</string>
+</resources>

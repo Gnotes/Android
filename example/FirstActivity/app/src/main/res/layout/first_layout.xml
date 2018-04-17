@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_first_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是一个按钮，点击进入下一个页面"
+        />
+    <Button
+        android:id="@+id/btn_finish_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="销毁"/>
+
+    <Button
+        android:id="@+id/btn_open_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开网页"/>
+
+    <Button
+        android:id="@+id/btn_make_a_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打电话"/>
+</LinearLayout>
