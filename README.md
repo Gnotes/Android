@@ -7,6 +7,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`example`](example/)
 - [`搭建开发环境`](搭建开发环境/)
 - [`基本概述`](基本概述)
+- [`Android Studio`](Android-Studio)
 - [`API-Level`](API-Level)
 - [`Gradle`](Gradle/)
 - [`目录结构`](目录结构/)
@@ -50,3 +51,11 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [ ] [Android Development For Absolute Beginners](https://www.youtube.com/playlist?list=PLB03EA9545DD188C3) `English` `online watching`
 - [x] [极客学院Android项目实战视频教程](http://www.php.cn/course/330.html) `在线观看`
 - [x] [麦子学院Android应用开发](http://www.maiziedu.com/course/android/) `在线观看`
+- [x] [Android攻城狮的第一门课（入门篇）](http://www.imooc.com/learn/96) `在线观看`
+- [x] [Android攻城狮的第二门课（第1季](http://www.imooc.com/learn/107) `在线观看`
+- [x] [Android攻城狮的第二门课（第2季](http://www.imooc.com/learn/142) `在线观看`
+- [x] [Android攻城狮的第二门课（第3季](http://www.imooc.com/learn/179) `在线观看`
+- [x] [Fragment应用 上](http://www.imooc.com/learn/894) `在线观看`
+- [x] [Fragment应用 下](http://www.imooc.com/learn/904) `在线观看`
+- [x] [Android代码混淆与加固技术](http://www.imooc.com/learn/879) `在线观看`
+- [x] [AndroidStudio技巧全集](http://www.imooc.com/learn/650) `在线观看`
