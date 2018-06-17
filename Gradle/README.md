@@ -44,9 +44,9 @@ task clean(type: Delete) {
 ```
 
 > 可以看到两处`repositories`都声明了`jcenter()`,`jcenter()`是一个开源代码托管仓库，类似`maven / npm`  
-> 接着在`dependences`中使用`classpath`声明了一个`Gradle插件`，由于Gradle并不是专门为Android开发设计的，其他的语言也可以使用它来开发，因此，需要使用`com.android.tools.build:gradle:3.0.0`来声明，并指定版本
+> 接着在`dependences`中使用`classpath`声明了一个`Gradle插件`，由于Gradle并不是专门为Android开发设计的，其他的语言也可以使用它来开发，因此，需要使用`com.android.tools.build:gradle:3.0.0`来声明，并指定版本
 
-- 内层的`build.gradle`
+- 内层的`build.gradle`
 
 ```gradle
 apply plugin: 'com.android.application'
@@ -80,10 +80,10 @@ dependencies {
 ```
 
 > 第一行应用了一个插件,其值有两种方式，`com.android.application`表示这是一个应用程序模块，`com.android.library`表示这是一个库模块
-> defaultConfig 指定项目基本配置  
-> buildTypes 指定了生成安装文件的相关配置,一般会有两个闭包，一个`debug`，一个`release`，其中`debug`不是必须的，`minifyEnable`指定是否进行代码混淆，`proguardFiles`指定具体的混淆规则，这里指定了两个，一个是`proguard-android.text`是Android SDK目录下通用的规则，一个`proguard-rules.pro`是当前项目根目录下的，Android Studio 自动生成的都是测试版安装文件  
-> dependences 指定依赖，第一行`implementation fileTree` 老版本的使用`compile`标示） 是本地依赖声明，表示将`libs`目录下的`*.jar`文件都添加到项目构建中；第二行的`implementation`表示对远程依赖的声明`com.android.support:appcompat-v7:26.1.0`  
-> 对于库的依赖我们这里没有用到，基本格式是`implementation project(:project_name)`,如implementation project(:JsonParse)  
+> defaultConfig 指定项目基本配置  
+> buildTypes 指定了生成安装文件的相关配置,一般会有两个闭包，一个`debug`，一个`release`，其中`debug`不是必须的，`minifyEnable`指定是否进行代码混淆，`proguardFiles`指定具体的混淆规则，这里指定了两个，一个是`proguard-android.text`是Android SDK目录下通用的规则，一个`proguard-rules.pro`是当前项目根目录下的，Android Studio 自动生成的都是测试版安装文件  
+> dependences 指定依赖，第一行`implementation fileTree` 老版本的使用`compile`标示） 是本地依赖声明，表示将`libs`目录下的`*.jar`文件都添加到项目构建中；第二行的`implementation`表示对远程依赖的声明`com.android.support:appcompat-v7:26.1.0`  
+> 对于库的依赖我们这里没有用到，基本格式是`implementation project(:project_name)`,如implementation project(:JsonParse)  
 > testCompile 是用于声明测试用例库  
 
 其他版本信息参考 [API-Level](../API-Level)

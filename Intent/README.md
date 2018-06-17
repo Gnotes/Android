@@ -23,7 +23,7 @@ activity、service和broadcast receiver之间是通过Intent进行通信的，�
 隐式类型通过`匹配`抽象的`action`和`category`等信息,通过系统自己分析Intent来最终确定操作意图（Activity） 
 
 ```java
-// 这样明确指定了目标意图的Intent,即是显示Intent
+// 这样明确指定了目标意图的Intent,即是显示Intent
 Intent lancherSecIntent = new Intent(FirstActivity.this,SecondActivity.class);
 ```
 
