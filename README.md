@@ -49,3 +49,4 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [x] [Android开发从零开始视频教程](http://www.xuexi111.com/jiaocheng/shipin/26275.html) `下载`
 - [ ] [Android Development For Absolute Beginners](https://www.youtube.com/playlist?list=PLB03EA9545DD188C3) `English` `online watching`
 - [x] [极客学院Android项目实战视频教程](http://www.php.cn/course/330.html) `在线观看`
+- [x] [麦子学院Android应用开发](http://www.maiziedu.com/course/android/) `在线观看`
