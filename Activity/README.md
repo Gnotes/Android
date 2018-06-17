@@ -202,29 +202,28 @@ _程序运行时，设备的配置可能会改变，如：横竖屏的切换、�
 
     (1) 在MainActivity中，调用onSaveInstanceState()，即添加如下代码就可以将临时数据保存：    
 
-    ```java
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        String tempData = "Something you want to save";
-        outState.putString("data_key", tempData);
-    }
-    ```
+```java
+@Override
+protected void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    String tempData = "Something you want to save";
+    outState.putString("data_key", tempData);
+}
+```
 
     (2) 修改MainActivity的onCreate()方法,判断当前状态是否有保存数据  
 
-    ```java
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //步骤2：还原当前activity的状态
-        if (savedInstanceState != null) {
-            String tempData = savedInstanceState.getString("data_key");
-        }
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    //步骤2：还原当前activity的状态
+    if (savedInstanceState != null) {
+        String tempData = savedInstanceState.getString("data_key");
     }
-
-    ```
+}
+```
 
 - 通过Shared Preferences保存数据
 
