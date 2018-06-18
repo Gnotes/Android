@@ -2,6 +2,8 @@
 
 Activity组件是四大组件之一，在应用中一个Activity可以用来表示一个界面， 中文意思也可以理解为“活动” ，即一个活动开始，代表Activity组件启动；活动结束，代表一个Activity的生命周期结束
 
+![Android-studio activity 界面](./1.png)
+
 ## 活动声明
 
 活动的声明需要放在AndroidManifest.xml的 `<application>`标签中，通过`<activity>`标签声明，如: 

@@ -8,6 +8,8 @@ Android 一般分为4大组件
 - `Content Provider` : 内容提供者(数据共享)
 - `Intent` : 意图(个人定位为第5个，操作意图，参数传递)
 
+<img src="./1.png">
+
 ## [Activity](../Activity/)
 
 应用程序中，一个Activity通常就是一个单独的屏幕，它上面可以显示一些控件也可以监听并处理用户的事件做出响应
