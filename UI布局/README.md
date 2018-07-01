@@ -15,12 +15,20 @@
 | ---- | ---- |
 | Linear Layout 线性布局 | 所有子组件在一条线上，水平或垂直 | 
 | Relative Layout 相对布局 | 所有子组件相对于父组件 |
-| Table Layout 表格布局| 所有子组件按照行列方式排列 |
 | Absolute Layout 绝对布局 | 绝对定位子组件 |
 | Frame Layout 帧布局 | 帧布局为每个加入其中的组件创建一个空白的区域(称为一帧)，每个子组件占据一帧，这些帧会根据gravity属性执行自动对齐 |
+
+其他布局
+
+| 名称 | 描述 |
+| ---- | ---- |
+| PercentFrame Layout 百分比布局| 所有子组件按照百分比排列 |
+| Table Layout 表格布局| 所有子组件按照行列方式排列 |
 | GridLayout 网格布局 | 容器划分为rows × columns个网格，每个网格可以放置一个组件 |
 | List View | ListView is a view group that displays a list of scrollable items |
 | Grid View | GridView is a ViewGroup that displays items in a two-dimensional, scrollable grid. |
+| Coordinator Layout | 粘性布局 |
+| Constraint Layout | 约束布局 |
 
 ## 布局属性
 
@@ -97,3 +105,9 @@ android:id="@+id/my_button"
 ## Coordinator Layout
 
 [`Coordinator Layout`](https://www.aswifter.com/2015/11/12/mastering-coordinator/)
+[`使用CoordinatorLayout打造各种炫酷的效果`](https://www.jianshu.com/p/f09723b7e887/)
+
+## Constraint Layout
+
+- [解析ConstraintLayout的性能优势](https://mp.weixin.qq.com/s/gGR2itbY7hh9fo61SxaMQQ)
+- [ConstraintLayout 完全解析](https://blog.csdn.net/lmj623565791/article/details/78011599?utm_source=tuicool&utm_medium=referral)

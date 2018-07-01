@@ -21,6 +21,7 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
   - [`Broadcast-Receiver`](Broadcast-Receiver/)
   - [`Content-Provider`](Content-Provider/)
 - [`UI布局`](UI布局/)
+  - [`xmlns`](UI布局/xmlns.md)
 - [`Menu`](Menu/)
 - [`TextView`](TextView/)
 - [`Button`](Button/)
@@ -33,6 +34,9 @@ _我是在Mac上学习Android，因此会跟windows有些不同，有不正确�
 - [`RelativeLayout`](RelativeLayout/)
 
 # Reference
+
+- [Material Design](http://wiki.jikexueyuan.com/project/material-design/)
+- [Android 极客学院](http://wiki.jikexueyuan.com/list/android/)
 - [Android 开发者官网](https://developer.android.com/index.html)
 - [构建您的第一个应用](https://developer.android.com/training/basics/firstapp/index.html?hl=p)
 - [Android development with Android Studio - Tutorial](http://www.vogella.com/tutorials/Android/article.html)

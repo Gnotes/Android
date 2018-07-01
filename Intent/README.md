@@ -18,7 +18,7 @@ activity、service和broadcast receiver之间是通过Intent进行通信的，�
 - 显式Intent（直接类型）
 - 隐式Intent（间接类型）
 
-官方建议使用隐式Intent。(component属性为直接类型，其他均为间接类型)  
+官方建议使用隐式Intent。(component属性为直接类型，即直接指定要启动的活动`Activity.class`，其他均为间接类型)  
 显示类型通过`直接指定组件`来表明意图   
 隐式类型通过`匹配`抽象的`action`和`category`等信息,通过系统自己分析Intent来最终确定操作意图（Activity） 
 
