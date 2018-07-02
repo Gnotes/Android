@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="app_title">线性布局示例</string>
+    <string name="btn_first">第一个按钮</string>
+    <string name="btn_second">第二个按钮</string>
+    <string name="btn_third">第三个按钮</string>
+</resources>
