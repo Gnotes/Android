@@ -97,10 +97,14 @@ Gravity attribute plays important role in positioning the view object and it can
 android:id="@+id/my_button"
 ```
 
-通过`@` 和 `+`
+通过`@` 和 `+` 及 `?`
 
-- @ : 标明这个属性，xml解析时会自动转化为对应资源   
+> @ 和 ？都是用来引用其他已经定义好的资源的，@引用的是之前定义好的资源，存在于当前项目或者android的framework里。  
+> 而？则是引用的当前加载的`样式文件`里。意思就是说你在xml里某行定义了一个资源，在下面某行需要引用这个资源时用`?`即可  
+
+- @ : 标明这个属性，xml解析时会自动转化为对应资源
 - + : 标明这个属性是`新增`的并需要`添加到资源文件`中
+- ? : 标明这个属性，是引用之前已定义好的样式属性
 
 ## Coordinator Layout
 
