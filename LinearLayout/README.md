@@ -8,3 +8,5 @@
 - `android:layout_gravity` : 指定控件在布局的对齐方式
   > 当orientation为`vertical`时只有`horizontal`(水平)方向的属性值起作用，为`horizontal`时只有垂直方向的属性才有作用
 - `layout_weight` : 布局权重，只用比例的方式来布局，当使用了此属性时，宽度或高度值不应该由`layout_width | layout_height`来决定
+
+<img src="./1.png" width="320">
