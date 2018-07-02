@@ -14,4 +14,4 @@
 - `layout_toLeftOf` : 相对某个组件的左方
 - `layout_toRightOf` : 相对某个组件的右方
 
-<img src="./1.png" width="320 />
+<img src="./1.png" width="320" />
