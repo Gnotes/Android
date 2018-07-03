@@ -6,3 +6,6 @@
 
 - [HelloWorld](./HelloWorld)
 - [FirstActivity](./FirstActivity)
+- [LinearLayout](./LinearLayout)
+- [RelativeLayout](./RelativeLayout)
+- [Toolbar](./Toolbar)
