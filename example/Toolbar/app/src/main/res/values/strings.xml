@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Toolbar</string>
+    <string name="app_name">Toolbar sample</string>
+    <string name="main_activity">MainActivity</string>
+    <string name="toolbar_activity">Toolbar Activity</string>
     <string name="action_settings">Settings</string>
+    <string name="action_bar">Action Bar</string>
 </resources>
